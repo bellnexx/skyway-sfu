@@ -1,0 +1,19 @@
+<body>
+  <p>CALLER ID: <span id="my-id">TAXIREADER-ADMIN</span></p>
+
+  <div>
+    Taxi Id (call receiver): <input id="channel-name" type="text" />
+    <button id="join">Start Call</button>
+    <button id="leave">End Call</button>
+
+  </div>
+
+
+  <div></div>
+
+  <video id="local-video" width="400px" muted playsinline></video>
+  <div id="button-area"></div>
+  <div id="remote-media-area"></div>
+  <script src="https://cdn.jsdelivr.net/npm/@skyway-sdk/room/dist/skyway_room-latest.js"></script>
+  <script type="module" src="main.js"></script>
+  </body>
