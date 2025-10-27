@@ -63,7 +63,8 @@ const token = new SkyWayAuthToken({
         const context = await SkyWayContext.Create(token);
         const room = await SkyWayRoom.FindOrCreate(context, {
             type: "sfu",
-            name: roomNameInput,
+            //name: roomNameInput,
+            name: "12345",
         });
     
         const me = await room.join();
